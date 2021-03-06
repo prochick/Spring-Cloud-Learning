@@ -1,0 +1,18 @@
+server:
+  port: 8023
+  servlet:
+    context-path: /
+
+spring:
+  application:
+    name: ribbon-service
+
+eureka:
+  instance:
+    instance-id: ribbon-service3-8023
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8010/eureka
+
