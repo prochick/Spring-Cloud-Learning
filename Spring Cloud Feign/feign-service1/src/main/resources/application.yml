@@ -1,0 +1,18 @@
+server:
+  port: 8021
+  servlet:
+    context-path: /
+
+spring:
+  application:
+    name: feign-service
+
+eureka:
+  instance:
+    instance-id: feign-service1-8021
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8010/eureka
+
