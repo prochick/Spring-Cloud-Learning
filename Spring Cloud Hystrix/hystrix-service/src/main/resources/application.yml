@@ -1,0 +1,26 @@
+server:
+  port: 8021
+  servlet:
+    context-path: /
+
+spring:
+  application:
+    name: hystrix-service
+
+eureka:
+  instance:
+    instance-id: hystrix-service-8021
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8010/eureka
+
+## 暴露hystrix的服务监控端点
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: 'hystrix.stream'
+

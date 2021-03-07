@@ -1,0 +1,8 @@
+server:
+  port: 8090
+  servlet:
+    context-path: /
+
+spring:
+  application:
+    name: hystrix-dashboard
