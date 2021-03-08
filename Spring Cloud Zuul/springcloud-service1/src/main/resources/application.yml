@@ -1,0 +1,18 @@
+server:
+  port: 8021
+  servlet:
+    context-path: /
+
+spring:
+  application:
+    name: springcloud-service
+
+eureka:
+  instance:
+    instance-id: springcloud-service-8021
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8010/eureka

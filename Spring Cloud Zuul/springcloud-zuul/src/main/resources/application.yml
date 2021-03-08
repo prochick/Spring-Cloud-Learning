@@ -1,0 +1,43 @@
+server:
+  port: 8888
+  servlet:
+    context-path: /
+
+spring:
+  application:
+    name: springcloud-zuul
+
+eureka:
+  instance:
+    instance-id: springcloud-zuul-8888
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8010/eureka
+
+zuul:
+  # 配置路由
+  routes:
+    springcloud-service:
+      path: /userService/**
+  # 过滤路由
+  ignored-services: springcloud-service
+  # 访问前缀
+  prefix: /
+  # 配置过滤敏感的请求头信息，设置为空就不会过滤
+  sensitive-headers: Cookie,Set-Cookie,Authorization
+  # 指定重定向是否要添加host请求头
+  add-host-header: true
+  # 是否禁用指定过滤器
+  PreLogFilter:
+    pre:
+      disable: false
+
+# 暴露监控路径
+management:
+  endpoints:
+    web:
+      exposure:
+        include: 'routes'
