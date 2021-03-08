@@ -1,0 +1,29 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: config-server
+
+  cloud:
+    config:
+      server:
+        # 配置存储配置信息的Git仓库
+        git:
+          uri: https://gitee.com/prochick/spring-cloud-config.git
+#          # 用户名
+#          username: xxx
+#          # 密码
+#          password: xxx
+#          # 指定是否开启启动时直接从git获取配置
+#          clone-on-start: true
+
+eureka:
+  instance:
+    prefer-ip-address: true
+    instance-id: config-server-8888
+  client:
+    fetch-registry: false
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8010/eureka/
+
