@@ -1,0 +1,30 @@
+server:
+  port: 9000
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        service-name: ${spring.application.name}
+    config:
+      server:
+        git:
+          uri: https://gitee.com/prochick/spring-cloud-config.git
+          default-label: master
+#          basedir: F:\config
+
+  rabbitmq:
+    host: 192.168.128.130
+    port: 5672
+    username: guest
+    password: guest
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
