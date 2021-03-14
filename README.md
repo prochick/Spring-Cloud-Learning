@@ -17,3 +17,6 @@
 - <a href="https://blog.csdn.net/qq_45747519/article/details/114581886?spm=1001.2014.3001.5501" target="_blank">Spring Cloud Feign</a>
 - <a href="https://blog.csdn.net/qq_45747519/article/details/114582038?spm=1001.2014.3001.5501" target="_blank">Spring Cloud Zuul</a>
 - <a href="https://blog.csdn.net/qq_45747519/article/details/114582163?spm=1001.2014.3001.5501" target="_blank">Spring Cloud Config</a>
+- <a href="https://blog.csdn.net/qq_45747519/article/details/114787980" target="_blank">Spring Cloud Consul</a>
+- <a href="https://blog.csdn.net/qq_45747519/article/details/114788686" target="_blank">Spring Cloud Gateway</a>
+- <a href="https://blog.csdn.net/qq_45747519/article/details/114789229" target="_blank">Spring Cloud Bus</a>
