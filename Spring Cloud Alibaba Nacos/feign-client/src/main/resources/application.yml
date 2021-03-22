@@ -1,0 +1,27 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: feign-client
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+        service: ${spring.application.name}
+
+# feign的配置
+feign:
+  hystrix:
+  enabled: true
+
+# 日志的配置
+logging:
+  level:
+    com.jhy.feignclient.service.UserService: debug
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

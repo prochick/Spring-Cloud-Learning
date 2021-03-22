@@ -1,0 +1,22 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: sentinel-service
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+        service: ${spring.application.name}
+    sentinel:
+      enabled: true
+      transport:
+        dashboard: localhost:8080
+        port: 8719
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

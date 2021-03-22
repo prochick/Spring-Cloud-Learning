@@ -1,0 +1,23 @@
+server:
+  port: 9000
+spring:
+  application:
+    name: nacos-config
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+        service: ${spring.application.name}
+      config:
+        server-addr: localhost:8848
+#        namespace: public
+#        group: DEFAULT_GROUP
+        file-extension: yaml
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

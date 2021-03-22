@@ -1,0 +1,47 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: consul-gateway
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        service-name: ${spring.application.name}
+    gateway:
+      routes:
+        - id: order-service
+          uri: lb://order-service
+          predicates:
+            - Path=/order/**
+        - id: goods-service
+          uri: lb://goods-service
+          predicates:
+            - Path=/goods/**
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+  zipkin:
+    base-url: http://localhost:9411
+    sender:
+      type: web
+    sleuth:
+      sampler:
+        probability: 1
+
+logging:
+  level:
+    root: INFO
+    org.springframework.web.servlet.DispatcherServlet: DEBUG
+    org.springframework.cloud.sleuth: DEBUG
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+
