@@ -1,0 +1,19 @@
+server:
+  port: 8000
+  servlet:
+    context-path: /
+
+spring:
+  application:
+    name: eureka-server
+
+eureka:
+  instance:
+    hostname: localhost
+    client:
+      register-with-eureka: true
+      fetch-registry: false
+      service-url:
+        defaultZone: http://localhost:8000/eureka
+    server:
+      enable-self-preservation: true

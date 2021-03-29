@@ -1,0 +1,22 @@
+server:
+  port: 8082
+  servlet:
+    context-path: /
+    session:
+      cookie:
+        name: OAUTH2-CLIENT-SESSIONID
+spring:
+  application:
+    name: sso-client
+
+oauth2-server-url: http://127.0.0.1:8081
+security:
+  oauth2:
+    client:
+      client-id: admin
+      client-secret: admin123456
+      user-authorization-uri: ${oauth2-server-url}/oauth/authorize
+      access-token-uri: ${oauth2-server-url}/oauth/token
+    resource:
+      jwt:
+        key-uri: ${oauth2-server-url}/oauth/token_key

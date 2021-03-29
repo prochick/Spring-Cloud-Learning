@@ -1,0 +1,20 @@
+server:
+  port: 8001
+  servlet:
+    context-path: /
+
+spring:
+  application:
+    name: student-service
+  profiles:
+    active: dev
+
+eureka:
+  instance:
+    instance-id: student-service-8001
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8000/eureka

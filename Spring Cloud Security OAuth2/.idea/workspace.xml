@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2f988b07-7b19-4893-9fd5-8dad9eb8c5be" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/java/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\java\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1qEszhG6h6y8Fq6izfNDOsU75gp" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RunManager">
+    <configuration name="SpringCloudSecurityOauth2Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="Spring Cloud Security OAuth2" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jhy.springcloudsecurityoauth2.SpringCloudSecurityOauth2Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2f988b07-7b19-4893-9fd5-8dad9eb8c5be" name="Default Changelist" comment="" />
+      <created>1616656347807</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1616656347807</updated>
+      <workItem from="1616656353806" duration="2677000" />
+      <workItem from="1616660461170" duration="6391000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="853" y="140" key="#com.intellij.ide.util.MemberChooser" timestamp="1616658078149">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="853" y="140" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1616658078149" />
+    <state x="549" y="186" key="FileChooserDialogImpl" timestamp="1616656380204">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="549" y="186" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1616656380204" />
+    <state width="1209" height="107" key="GridCell.Tab.0.bottom" timestamp="1616667107789">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1209" height="107" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1616667107789" />
+    <state width="1209" height="107" key="GridCell.Tab.0.center" timestamp="1616667107789">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1209" height="107" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1616667107789" />
+    <state width="1209" height="107" key="GridCell.Tab.0.left" timestamp="1616667107789">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1209" height="107" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1616667107789" />
+    <state width="1209" height="107" key="GridCell.Tab.0.right" timestamp="1616667107789">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1209" height="107" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1616667107789" />
+    <state width="1209" height="107" key="GridCell.Tab.1.bottom" timestamp="1616667107789">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1209" height="107" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1616667107789" />
+    <state width="1209" height="107" key="GridCell.Tab.1.center" timestamp="1616667107789">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1209" height="107" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1616667107789" />
+    <state width="1209" height="107" key="GridCell.Tab.1.left" timestamp="1616667107789">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1209" height="107" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1616667107789" />
+    <state width="1209" height="107" key="GridCell.Tab.1.right" timestamp="1616667107789">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1209" height="107" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1616667107789" />
+    <state x="270" y="76" key="SettingsEditor" timestamp="1616656383317">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="270" y="76" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1616656383317" />
+  </component>
+</project>

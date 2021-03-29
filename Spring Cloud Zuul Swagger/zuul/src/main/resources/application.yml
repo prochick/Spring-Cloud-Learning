@@ -1,0 +1,36 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+
+spring:
+  application:
+    name: eureka-zuul
+
+eureka:
+  instance:
+    instance-id: eureka-zuul-8080
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8000/eureka
+
+zuul:
+  # 配置路由
+  routes:
+    student-service:
+      path: /student-service/**
+    teacher-service:
+      path: /teacher-service/**
+#  ignored-services: springcloud-service
+#  prefix: /
+#  sensitive-headers: Cookie,Set-Cookie,Authorization
+#  add-host-header: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

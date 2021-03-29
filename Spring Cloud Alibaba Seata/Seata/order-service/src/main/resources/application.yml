@@ -1,0 +1,51 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: order-service
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+        service: ${spring.application.name}
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/seata-order?useSSL=false&useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: jhy
+
+feign:
+  hystrix:
+    enabled: true
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  type-aliases-package: com.jhy.orderservice.pojo
+
+seata:
+  enabled: true
+  application-id: ${spring.application.name}
+  tx-service-group: my_test_tx_group
+  registry:
+    type: nacos
+    nacos:
+      application: seata-server
+      server-addr: 127.0.0.1:8848
+      namespace: 0d63643a-9958-49e6-88c1-5eb66a5e3b0d
+      group: SEATA_GROUP
+      username: "nacos"
+      password: "nacos"
+  config:
+    type: file
+    file:
+      name: file.conf
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
