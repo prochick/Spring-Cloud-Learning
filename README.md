@@ -8,7 +8,11 @@
 这是本人自己在学习 Spring Cloud 微服务过程中对其中的相关技术的编写的示例Demo，希望可以对一些正在学习该方面的小伙伴提供帮助。
 
 # 环境
-本Spring Cloud组件Demo示例是基于IDEA编写，采用 Spring Cloud 的 Hoxton 版本以及 Spring Boot 的2.2.0版本。
+
+![JAVA 8](https://img.shields.io/badge/IDE-Idea-brightgreen.svg)
+![JAVA 8](https://img.shields.io/badge/JDK-1.8-brightgreen.svg)
+![JAVA 8](https://img.shields.io/badge/SpringCloud-HoxtonSR1/SR6-brightgreen.svg)
+![JAVA 8](https://img.shields.io/badge/SpringBoot-2.2.0/2.2.8-brightgreen.svg)
 
 # 目录
 
